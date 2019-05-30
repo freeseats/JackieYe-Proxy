@@ -4,8 +4,13 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// 3010 Reviews
+// 3020 Reservations
+// 3030 topbar
+// 3040 Me
+// 3050 photos
+
 // pathing issue, use the absolute path
-// app.use(express.static(path.resolve(__dirname, '/public')));
 app.use(express.static('public'));
 
 app.get('/:id', (req, res) => {
